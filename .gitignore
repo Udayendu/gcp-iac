@@ -1,2 +1,3 @@
 Terraform/keys/.credentials_file.json
 *.git
+Terraform/.terraform

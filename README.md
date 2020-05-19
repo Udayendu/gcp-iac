@@ -18,13 +18,35 @@
     # vim  main.tf
       
     provider "google" {
-      project = "GCP Solution Architect Design"
+      project = "gcp-solution-architect-design"
       # Get the 'credentials_file.json' from the API & Services section in your GCP account
-      credentials = file(".credentials_file.json")  
-      region  = "asia-south1"
-      zone    = "asia-south1-b"
+      credentials = file("keys/.credentials_file.json")  
+      region  = var.region_name
+      zone    = var.zone_name
+
+
+    [....]
+
     }
     ```
+
+    Similarly create all the remaining folder with needed data as mentioned in the attached folder in github.
+    Here is the folder structure:
+    
+    # tree gcp-iac/Terraform/
+    gcp-iac/Terraform/
+    ├── keys
+    │   ├── privatekey.pem
+    │   └── publickey.pem
+    ├── main.tf
+    ├── scripts
+    │   └── web-install.sh
+    ├── terraform.tfvars
+    └── variable.tf
+
+    2 directories, 6 files
+
+
     ```
     # terraform init
     # terraform providers
@@ -33,3 +55,5 @@
     ```
 
     Now your provision server is ready to communicate with GCP platform related to the services that you have selected wile creating the services key.
+
+    NOTE: Don't forget to create your credentials file under keys directory with '.credentials_file.json' name as a hidden file.   
