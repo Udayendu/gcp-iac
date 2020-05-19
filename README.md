@@ -56,4 +56,4 @@
 
     Now your provision server is ready to communicate with GCP platform related to the services that you have selected wile creating the services key.
 
-    NOTE: Don't forget to create your credentials file under keys directory with '.credentials_file.json' name as a hidden file.   
+    **NOTE:** Don't forget to create your credentials file under keys directory with '.credentials_file.json' name as a hidden file.   
