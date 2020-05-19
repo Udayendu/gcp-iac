@@ -32,7 +32,7 @@
 
     Similarly create all the remaining folder with needed data as mentioned in the attached folder in github.
     Here is the folder structure:
-    
+    ```
     # tree gcp-iac/Terraform/
     gcp-iac/Terraform/
     ├── keys
@@ -45,7 +45,7 @@
     └── variable.tf
 
     2 directories, 6 files
-
+    ```
 
     ```
     # terraform init
